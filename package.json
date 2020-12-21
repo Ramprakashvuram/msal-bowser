@@ -37,25 +37,7 @@
       "lib/msal-browser.min.js"
   ],
   "scripts": {
-      "cdn": "npm run build:all && npm run cdn:upload && npm run cdn:sri",
-      "cdn:upload": "node ./cdn-upload.js",
-      "cdn:sri": "node ./cdn-sri.js",
-      "clean": "shx rm -rf dist lib",
-      "clean:coverage": "rimraf ../../.nyc_output/*",
-      "lint": "cd ../../ && npm run lint:browser",
-      "lint:fix": "npm run lint -- -- --fix",
-      "doc": "npm run doc:generate && npm run doc:deploy",
-      "doc:generate": "typedoc --mode modules --excludePrivate --excludeProtected --out ./ref ./src/ --gitRevision dev",
-      "doc:deploy": "gh-pages -d ref -a -e ref/msal-browser",
-      "test": "mocha",
-      "test:coverage": "nyc mocha",
-      "test:coverage:only": "npm run clean:coverage && npm run test:coverage",
-      "build:all": "npm run build:common && npm run build",
-      "build:common": "cd ../msal-common && npm run build",
-      "build:modules": "rollup -c",
-      "build:modules:watch": "rollup -cw",
-      "build": "npm run clean && npm run build:modules",
-      "prepack": "npm run build:all"
+      
   },
   "devDependencies": {
       "@azure/storage-blob": "^12.2.0-preview.1",
