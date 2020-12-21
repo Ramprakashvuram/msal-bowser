@@ -32,6 +32,7 @@
   },
   "files": [
       "dist",
+      "dist/src",
       "lib/msal-browser.js",
       "lib/msal-browser.js.map",
       "lib/msal-browser.min.js"
