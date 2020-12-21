@@ -14,7 +14,7 @@ import { RedirectHandler } from "../interaction_handler/RedirectHandler";
 import { PopupHandler } from "../interaction_handler/PopupHandler";
 import { SilentHandler } from "../interaction_handler/SilentHandler";
 import { BrowserAuthError } from "../error/BrowserAuthError";
-import { version, name } from "../../package.json";
+import { version, name } from "../../../package.json";
 import { EventType } from "../event/EventType";
 import { BrowserConfigurationAuthError } from "../error/BrowserConfigurationAuthError";
 var ClientApplication = /** @class */ (function () {
